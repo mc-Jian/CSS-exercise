@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS背景</title>
+</head>
+<!-- 
+Property	            描述
+background	            简写属性，作用是将背景属性设置在一个声明中。
+background-attachment(scroll fixed local initial inherit)	背景图像是否固定或者随着页面的其余部分滚动。
+background-color	    设置元素的背景颜色。
+background-image	    把图像设置为背景。
+background-position(left/right/center top/center/bottom ...)	    设置背景图像的起始位置。
+background-repeat(repeat repeat-x/y no-repeat inherit)	    设置背景图像是否及如何重复。
+...
+ -->
+ <style>
+     body {
+         background: #ffffff url("girl.jpg") no-repeat right top;
+         margin-right: 100px;
+     }
+     
+ </style>
+<body>
+    <h1>Hello World!</h1>
+    <p>背景图片只显示一次，但它的位置离文本较远</p>
+    <p>添加右边距，背景图片不会打扰文本</p>
+</body>
+</html>

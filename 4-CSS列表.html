@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS List</title>
+    <style>
+        ul {
+            /* margin: none;
+            padding: 0;移除默认 */
+            list-style-type: none;
+        }
+        ul.a {
+            list-style-type: circle;
+        }
+        ul.b {
+            list-style-type: square;
+        }
+        ol.c {
+            list-style-type:upper-roman;
+        }
+        ol.d {
+            list-style-type: lower-alpha;
+        }
+        ol.e {
+            list-style-type: upper-alpha;
+        }
+        ol.f {
+            list-style-type:lower-roman;
+        }
+    </style>
+</head>
+<!-- 
+    属性	描述
+list-style	简写属性。用于把所有用于列表的属性设置于一个声明中
+list-style-image:url();	将图像设置为列表项标志。
+list-style-position	设置列表中列表项标志的位置。
+list-style-type	设置列表项标志的类型。
+ -->
+<body>
+    <p>disorder list :</p>
+    <ul class="a">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+    <ul class="b">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+    <p>order list :</p>
+    <ol class="c">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+    <ol class="d">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+    <ol class="e">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+    <ol class="f">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+</body>
+</html>
