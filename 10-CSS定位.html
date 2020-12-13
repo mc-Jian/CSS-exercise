@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="stylesheet" href="margin.css">
+</head>
+<!-- 
+static 标准文档流
+relative 相对自己的位置,占用位置,会影响布局
+fixed 不会随进度条滚动而变化的absolute
+absolute 相对已定位的父元素或html,不占位置,不会影响布局
+sticky
+ -->
+
+ <!-- 
+标准流盒子，低于浮动的盒子，浮动的盒子又低于定位的盒子。
+定位高于浮动，浮动高于标准流。（高低和占不占位置无关）
+用法：
+1、必须有定位。（除去static之外）。
+2、给定 z-index 的值为层级的值。（不给默认为0）
+a. 层级为0的盒子，也比标准流和浮动高。
+b. 层级为负数的盒子，比标准流和浮动低。
+c. 层级不取小数）
+d. 层级一样，后面的盒子比前面的层级高。
+e. 浮动或者标准流的盒子，后面的盒子比前面的层级高。
+f. absolute是不占位置的，relative是占位置的。而层级的高低，是和占不占位置没有关系的。
+  -->
+<body>
+    <div class="div1">
+        <!-- 如果此处有内容，则不会margin重叠 -->
+        <div class="div1-1">div1-1</div>
+        div1
+    </div>
+    <div class="div2">
+        <div class="div2-1">div2-1</div>
+        <div class="div2-2">div2-2</div>
+        div2
+    </div>
+    <div class="div3">div3</div>
+    <div class="div4">
+        <div class="div4-1">div4-1</div>
+        div4
+    </div>
+    <div class="div5">
+        <div class="div5-1">div5-1</div>
+        div5
+    </div>
+    <div class="div6">
+        <div class="div6-1"></div>
+    </div>
+</body>
+</html>

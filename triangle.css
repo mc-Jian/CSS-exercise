@@ -1,0 +1,68 @@
+.up{
+    /* position: absolute; */
+    height: 0;
+    width:0;
+    margin: 10px auto;
+    border: solid 30px;
+    border-color:transparent transparent red transparent; 
+    /* transparent: 全透明黑色  rgba(0,0,0,0)*/
+}
+.down{
+    /* position: absolute; */
+    height:0;
+    width:0;
+    margin:50px auto;
+    border: solid 30px;
+    border-color: yellow transparent transparent transparent;
+}
+.left{
+    /* position: absolute; */
+    height:0;
+    width:0;
+    margin:90px auto;
+    border:solid 30px;
+    border-color: transparent deepskyblue transparent transparent;
+}
+.right{
+    /* position: absolute; */
+    height: 0;
+    width:0;
+    margin:130px auto;
+    border: solid 30px;
+    border-color:transparent transparent transparent blue;
+}
+.top-left{
+    height: 0;
+    width: 0;
+    margin:170px auto;
+    border-top:solid 30px red;
+    border-right:solid 30px transparent; 
+   /*left-top:
+   border-left: solid 30px red;
+   border-bottom: solid 30px transparent;
+    */
+}
+.top-right{
+    height:0;
+    width:0;
+    margin:210px auto;
+    border-top:solid 30px red;
+    border-left: solid 30px transparent;
+   /* right-top */
+}
+.bottom-left{
+    height:0;
+    width:0;
+    margin:250px auto;
+    border-bottom:solid 30px blue;
+    border-right:solid 30px transparent;
+    /* left-bottom */
+}
+.bottom-right{
+    height: 0;
+    width: 0;
+    margin:280px auto;
+    border-bottom:solid 30px purple;
+    border-left:solid 30px transparent;
+    /* right-bottom */
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>显示与隐藏</title>
+    <style>
+        p.c1 {
+            visibility: hidden;
+            /* 未彻底消失,占用位置仍影响布局 */
+        }
+        p.c2 {
+            display:none;
+            /* 彻底消失,不影响布局 */
+        }
+        table,th,td {
+            border:1px solid black;
+        }
+        tr.collapse {
+            visibility: collapse;
+        }
+    </style>
+</head>
+<body>
+    <p>This is a para</p>
+    <p class='c1'>Hello</p>
+    <p class="c2">Hi</p>
+    <table>
+        <tr>
+          <th>FirstName</th>
+          <th>LastName</th>
+        </tr>
+        <tr>
+          <td>Peter</td>
+          <td>Griffin</td>
+        </tr>
+        <tr class="collapse">
+          <td>Lois</td>
+          <td>Griffin</td>
+        </tr>
+      </table>
+</body>
+</html>

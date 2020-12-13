@@ -1,0 +1,112 @@
+/* https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing */
+/* 同级别相邻元素margin会重叠 */
+.div1{
+    width:200px;
+    height:200px;
+    margin:10px auto;
+    background-color: red;
+}
+ .div1-1{
+    width:100px;
+    height:100px;
+    margin:10px auto;
+    background-color: purple;
+    /* div1没有border和padding等，子元素和父元素margin会重叠 */
+} 
+.div2{
+    width:200px;
+    height:200px;
+    margin:10px auto;
+    background-color: blue;
+}
+.div2-1{
+    width:100px;
+    height:100px;
+    margin:10px auto;
+    background-color: green;
+    position: relative;
+    /* 相对原位置 
+    不脱离标准流 仍占用空间
+    margin等会影响布局
+    */
+    left:30px;
+    top:30px;
+    /* top/bottom  right/left 选其一 */
+}
+.div2-2{
+    width:100px;
+    height:100px;
+    margin:10px auto;
+    background-color: green;
+    position: absolute;
+    /*相对于已定位的父框 
+    脱离标准流 
+    不区分元素类型(block,inline,inline-block)
+    有top/left后,忽略padding等,margin等不影响布局
+    若以html为准则只是以首屏为准,滚动条滚动时其在页面中的位置会改变
+    */
+    left:50px;
+    top:100px;
+}
+.div3{
+    width:200px;
+    height:200px;
+    margin:10px auto;
+    background-color: yellow;
+}
+.div4{
+    height:200px;
+    width: 200px;
+    background-color:skyblue;
+    margin:10px auto;
+    position: absolute;
+    top:200px;
+    left:200px;
+}
+.div4-1{
+    width:100px;
+    height:100px;
+    margin:10px auto; 
+    background-color: green;
+    position: relative;
+    left:10px;
+    top:40px;
+}
+.div5{
+    height:200px;
+    width: 200px;
+    background-color:skyblue;
+    margin:10px auto;
+    position: relative;
+    top:200px;
+    left:200px;
+}
+.div5-1{
+    width:100px;
+    height:100px;
+    margin:10px auto;
+    background-color: green;
+    position: absolute;
+    left:10px;
+    top:40px;
+}
+.div6{
+    height:200px;
+    width: 200px;
+    background-color:yellow;
+    margin:300px auto;
+    
+}
+.div6-1{
+    width:100px;
+    height:100px;
+    margin:10px -10px;
+    background-color: green; 
+}
+/* z-index
+默认:   
+- value=0;
+- 定位流覆盖标准流
+- 后定位的覆盖先定位的
+- 从父现象: 父元素设置z-index时,将以父元素的为准,子元素z-index失效
+*/

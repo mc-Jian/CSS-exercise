@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>边距</title>
+        <style>
+            .box1{
+                padding:10px 20px;
+                margin: 0px 20px;
+                background-color:blue;
+            }
+            .box2{
+                padding:10px 20px;
+                margin: 10px 10px;
+                background-color: green;
+                display: inline-block;
+                height:50px;
+            }
+            .box3{
+                padding:10px 20px;
+                margin: 10px 20px;
+                background-color:pink;
+            }
+            .box4{
+                background-color: red;
+                padding:10px 20px;
+                margin:50px;
+            }
+        </style>
+    </head>
+<!--
+1. 内边距
+- 边框和内容之间的距离
+- 格式：
+    - 非连写
+     - padding-top(/right/bottom/left):value;
+    - 连写
+     - padding:top right bottom left;
+
+- 取值value:
+    - px
+    - ......
+- 注意点
+    - 给标签设置内边距之后，标签占有的宽高会发送变化
+    - 给标签设置内边距之后，内边距也会有背景颜色
+
+2. 外边距
+- 标签和标签之间的距离
+- 格式：
+    - 非连写
+     - margin-top(/right/bottom/left)
+    - 连写
+     - margin: top right bottom left;
+- 注意点
+    - 外边距部分没有背景颜色
+- 合并现象：垂直方向上margin不会叠加而是合并，以大的为准
+    (上面一个的bottom和下面一个的top)
+- 水平方向会叠加(right left)
+
+3. 省略方式同边框
+-->
+    <body>
+        <div class="box1"><span>I am span in div.</span></div>
+        <span class="box2">I am span.</span>
+        <span class="box3">I am span.</span>
+        <div class="box4">I am div.</div>
+    </body>
+</html>
