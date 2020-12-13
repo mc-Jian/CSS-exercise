@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+}
+.div1{
+    background-color: red;
+}
+.div2{
+    background-color: blue;
+}
+.div3{
+    background-color: red;
+    height:30px;/* 改变height观看div4的浮动靠贴现象 */
+    /* 1. 添加p的父元素div3的height清除浮动 */   
+}
+.div4{
+    background-color: blue;
+}
+.div5{
+    background-color: red;
+}
+.div6{
+    background-color: blue;
+}
+p{
+    background-color: yellow;
+    width: 100px;
+    /* p为block 其width默认同父, background-color覆盖其父 */
+    float:left;
+}
+/* 2. clear:value;
+- 设置了clear的元素的value方位不允许浮动,即不去找其value方位的浮动元素停靠
+- margin失效
+*/
+
+.div5 p{
+    clear:both;
+}
+.div6 p{
+    clear:both;
+}
+
+/* 3. 隔墙法 清除float 
+外墙:中间插入一个block元素,并给block设置clear:both;
+内墙:第一个盒子的所有子元素后面添加一个block元素,并设置clear:both;
+
+*/
+/* 4.  */

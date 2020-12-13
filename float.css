@@ -1,0 +1,42 @@
+div{
+    width:200px;
+    height:200px;
+    background-color: red;
+    margin:10px;
+}
+.div1{
+    padding:10px;
+    /* 设置padding则不会和div1-1发生margin重叠 
+    div1-bottom与div1-1-top之间30px*/
+}
+.div1-1{
+    width:100px;
+    height:100px;
+    background-color: blue;
+    margin:20px auto;
+    /* 与div1重叠margin-top=20px */
+}
+.div3{
+    float:left;
+    width: 100px;
+    height:100px;
+    margin:20px;
+    /* float后不会margin重叠 */
+}
+.div4{
+    width: 500px;
+    height:500px;
+    background-color: skyblue;
+    /* overflow:scroll; */
+    /* margin:0; */
+}
+p{
+    background-color: yellowgreen;
+    border:solid 5px red;
+}
+.span1{
+    float: left;
+    background-color: skyblue;
+    height:100px;
+    width:100px;
+}

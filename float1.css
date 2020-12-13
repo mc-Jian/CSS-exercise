@@ -1,0 +1,17 @@
+*{
+    margin:0;
+    padding:0;
+}
+div{
+    border:solid 5px blue;
+    /* width:100%;默认 */
+    margin:50px;
+}
+p{
+    background-color: red;
+    width:100px;
+    height:100px;
+}
+.p1{
+    float:left;
+}
