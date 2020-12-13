@@ -1,0 +1,24 @@
+caption{
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+table,th,td{
+    border:1px solid blue;
+}
+table{
+    width:100%;
+    border-spacing:10px;
+}
+.table{
+    border-collapse: collapse;
+    /* 单线框 */
+}
+table th,td{
+    height: 50px;
+}
+td,th{
+    text-align: center;
+    background-color: skyblue;
+    font-family: sans-serif;
+    padding:10px;
+}
