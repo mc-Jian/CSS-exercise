@@ -11,7 +11,7 @@
         .tooltip {
             position: relative;
             display: inline-block;
-            border-bottom: 1px dotted #000;
+            border-bottom: 1px dotted black;
         }
         .tooltip .tooltip_text {
             visibility: hidden;
@@ -23,15 +23,30 @@
             padding: 5px 0;
             position: absolute;
             z-index: 1;
-            top: -5px;
-            left: 105%;
+            top: 150%;
+            left: 50%;
+            margin-left: -60px;
+            opacity: 0;
+            transition: opacity 1s;
+        }
+        .tooltip .tooltip_text::after {
+            content: "";
+            position:absolute;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width:5px;
+            border-style: solid;
+            border-color: transparent transparent black transparent;
         }
         .tooltip:hover .tooltip_text {
             visibility: visible;
+            opacity: 1;
         }
     </style>
 </head>
 <body>
+    <h1>提示工具</h1>
     <div class="tooltip">鼠标移动到这里
         <span class="tooltip_text">提示文本</span>
     </div>
