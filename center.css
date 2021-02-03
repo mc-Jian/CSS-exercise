@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 /* table-cell */
 .wrap1{
@@ -12,6 +13,7 @@
 }
 .box1{
     display: inline-block;
+    text-align: center;
 }
 /* margin+transform */
 .wrap2{
@@ -20,6 +22,7 @@
 .box2{
     margin: 50% auto;
     transform:translateY(-50%);
+    text-align: center;
 }
 /* inline-block+vertical-align */
 .wrap3{
@@ -33,6 +36,7 @@
 /* absolute+负margin */
 .wrap4{
     position: relative;
+    text-align: center;
 }
 .box4{
     position: absolute;
@@ -44,6 +48,7 @@
 /* absolute+margin:auto */
 .wrap5{
     position: relative;
+    text-align: center;
 }
 .box5{
     position: absolute;
@@ -56,6 +61,7 @@
 /* absolute+transform */
 .wrap6{
     position: relative;
+    text-align: center;
 }
 .box6{
     position: absolute;
@@ -66,6 +72,7 @@
 /* grid */
 .wrap7{
     display: grid;
+    text-align: center;
 }
 .box7{
     align-self: center;
